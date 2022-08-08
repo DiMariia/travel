@@ -1,0 +1,51 @@
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Regular.ttf) format('ttf'), url(../fonts/Poppins-Regular.woff) format('woff')
+    font-weight: 400
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Medium.ttf) format('ttf'), url(../fonts/Poppins-Medium.woff) format('woff')
+    font-style: italic
+    font-weight: 500
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-SemiBold.ttf) format('ttf'), url(../fonts/Poppins-SemiBold.woff) format('woff')
+    font-style: italic
+    font-weight: 600
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Bold.ttf) format('ttf'), url(../fonts/Poppins-Bold.woff) format('woff')
+    font-weight: 700
+
+@import 'base/variables'
+@import 'base/mixins'
+@import 'blocks/header'
+@import 'blocks/promo'
+@import 'base/typography'
+@import 'base/buttons'
+@import 'blocks/offer'
+
+body
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+    border: 0
+
+.container
+    margin: 0 auto
+    padding: 0 1rem
+    @include minw($mob)
+        padding: 0 2rem
+    @include minw($sm-tablet)
+        padding: 0 3rem
+    @include minw($tablet)
+        padding: 0 4rem
+    @include minw($sm-pc)
+        padding: 0 6rem
+    @include minw($pc)
+        padding: 0 10rem
+    @include minw($lg)
+        max-width: 100rem

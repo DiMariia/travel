@@ -1,0 +1,26 @@
+
+button
+    cursor: pointer
+    transition: 0.4s
+
+.header__button
+    border: 1.5px solid #777F96
+    background: none
+    border-radius: 4px
+    @include adaptiv-font(14, 10)
+    color: #FFF9F8
+    @include adaptiv-value("width", 152, 110, 0)
+    @include adaptiv-value("height", 56, 40, 0)
+    &:hover
+        background-color: #777F96
+
+.search__bttn
+    height: 100%
+    @include adaptiv-value("width", 152, 110, 0)
+    background-color: #34A5E4
+    border-radius: 4px
+    color: #fff
+    border: none
+    @include adaptiv-font(14, 10)
+    &:hover
+        opacity: 0.8

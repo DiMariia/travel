@@ -1,0 +1,50 @@
+.offer
+    background-color: rgba(247, 249, 252, 0.95)
+    @include adaptiv-value("padding-bottom", 100, 70, 0)
+    @include adaptiv-value("padding-top", 140, 80, 0)
+    h2
+        text-align: center
+        margin: 0
+    .subtitle
+        width: 45%
+        margin: 0 auto
+        margin-top: 1rem
+        @include maxw($pc)
+            width: 50%
+        @include maxw($sm-pc)
+            width: 60%
+        @include maxw($lg-mob)
+            width: 100%
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin: 0 -20px
+        margin-top: 80px
+        @include maxw($tablet)
+            flex-wrap: wrap
+            justify-content: center
+            margin: 0 -15px
+            @include adaptiv-value("margin-top", 80, 50, 0)
+
+    &__item
+        background-color: #fff
+        display: block
+        @include adaptiv-value("width", 280, 180, 0)
+        @include adaptiv-value("height", 270, 170, 0)
+        border-radius: 8px
+        padding: 30px 30px 30px 30px
+        margin: 0 15px
+        @include maxw($tablet)
+            margin: 0 20px
+            margin-bottom: 20px
+        .icon
+            @include adaptiv-value("width", 90, 60, 0)
+            @include adaptiv-value("height", 90, 60, 0)
+            background: #FFFFFF
+            box-shadow: 0px 20px 50px -15px rgba(45, 51, 60, 0.2)
+            border-radius: 8px
+            display: flex
+            justify-content: center
+            align-items: center
+        h3
+            @include adaptiv-value("margin-top", 50, 30, 0)
