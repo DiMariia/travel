@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>Travel</title>
-</head>
-<body>
-    <header class="header">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="src/css/slick.css" />
+        <link rel="stylesheet" href="src/css/style.css" />
+        <title>Travel</title>
+    </head>
+    <body>
+        <header class="header">
             <div class="container">
-                 <a href="#" class="header__logo"><img src="src/img/header/logo.png" alt="logo"></a>
+                <a href="#" class="header__logo"
+                    ><img src="src/img/header/logo.png" alt="logo"
+                /></a>
                 <div class="header__menu">
                     <ul class="header__menu-list">
                         <li class="menu-item">
@@ -23,70 +26,339 @@
                             <a href="#">why besnic</a>
                         </li>
                         <li class="menu-item">
-                           <a href="#">contact</a>
-                       </li>
+                            <a href="#">contact</a>
+                        </li>
                     </ul>
                 </div>
-               
-                 <button class="header__button">Create Account</button>
-                 <div class="header__burger">
-                    <span></span>
-                 </div>
-            </div>
-    </header>
 
-    <main>
-        <section class="promo">
-            <div class="container">
-                <h1>Exploring The World In Comfort.</h1>
-                <div class="subtitle">You do not have the right to remain silent… let us know what it takes to challenge you</div>
-                    <form class="promo__form"> 
-                        <div class="promo__searchbar">
-                            <input type="search" name="text" class="search" placeholder="Search destination">
-                            <input type="text" name="text" class="search" placeholder="C. Location">
-                            <input type="text" name="text" class="search" placeholder="2 Person">
-                        </div>
-                        <button class="promo__button search__bttn">Search</button>
-                    </form>
+                <button class="header__button">Create Account</button>
+                <div class="header__burger">
+                    <span></span>
+                </div>
             </div>
-        </section>
-        
-        <section class="offer">
-            <div class="container">
-                <h2>We Provide Best</h2>
-                <div class="subtitle">Take high quality online courses from the best online instrictors
-                    around the world & develop your skills.</div>
-                <div class="offer__wrapper">
-                    <div class="offer__item">
-                        <div class="icon">             
-                            <img src="src/img/offer/icon-card1.png" alt="">
-                        </div>
-                        <h3>Select Destination</h3>
-                        <p>At first choose the place you wanted to go</p>
+        </header>
+
+        <main>
+            <section class="promo">
+                <div class="container">
+                    <h1>Exploring The World In Comfort.</h1>
+                    <div class="subtitle">
+                        You do not have the right to remain silent… let us know
+                        what it takes to challenge you
                     </div>
-                    <div class="offer__item">
-                        <div class="icon">
-                            <img src="src/img/offer/icon-card2.png" alt="">
+                    <form class="promo__form">
+                        <div class="promo__searchbar">
+                            <input
+                                type="search"
+                                name="text"
+                                class="search"
+                                placeholder="Search destination"
+                            />
+                            <input
+                                type="text"
+                                name="text"
+                                class="search"
+                                placeholder="C. Location"
+                            />
+                            <input
+                                type="text"
+                                name="text"
+                                class="search"
+                                placeholder="2 Person"
+                            />
                         </div>
-                        <h3>Book a Trip</h3>
-                        <p>book your tip form our exclusive offers</p>
+                        <button class="promo__button search__bttn">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="offer">
+                <div class="container">
+                    <h2>We Provide Best</h2>
+                    <div class="subtitle">
+                        Take high quality online courses from the best online
+                        instrictors around the world & develop your skills.
                     </div>
-                    <div class="offer__item">
-                        <div class="icon">
-                            <img src="src/img/offer/icon-card3.png" alt="">
+                    <div class="offer__wrapper">
+                        <div class="offer__item">
+                            <div class="icon">
+                                <img
+                                    src="src/img/offer/icon-card1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <h3>Select Destination</h3>
+                            <p>At first choose the place you wanted to go</p>
                         </div>
-                        <h3>Take your flight</h3>
-                        <p>Take your flight on selected date and joy</p>
+                        <div class="offer__item">
+                            <div class="icon">
+                                <img
+                                    src="src/img/offer/icon-card2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <h3>Book a Trip</h3>
+                            <p>book your tip form our exclusive offers</p>
+                        </div>
+                        <div class="offer__item">
+                            <div class="icon">
+                                <img
+                                    src="src/img/offer/icon-card3.png"
+                                    alt=""
+                                />
+                            </div>
+                            <h3>Take your flight</h3>
+                            <p>Take your flight on selected date and joy</p>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
-        </section>
+            </section>
 
-    </main>
-    <footer></footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="src/js/script.js"></script>
-</body>
+            <section class="galery">
+                <div class="container">
+                    <h4>ABOUT US</h4>
+                    <div class="title">
+                        <h2>Explore all corners of the world with us.</h2>
+                        <div class="subtitle">
+                            These exercises ran in parallel with a series of
+                            focus groups comprising of parents. These exercises
+                            ran in parallel with a series of focus groups
+                            comprising of parents.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="slide">
+                        <img
+                            class="slide-img"
+                            src="src/img/galery/img-1.png"
+                            alt="img"
+                        />
+                        <div class="slide-text">
+                            <div class="slide-icon">
+                                <img src="src/img/galery/icon.png" alt="" />
+                            </div>
+                            <h3>Nanjing, China</h3>
+                            <div class="descr">
+                                These exercises ran in parallel with a series of
+                                focus groups comprising of parents. These
+                                exercises ran in parallel with a series.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            class="slide-img"
+                            src="src/img/galery/img-2.png"
+                            alt="img"
+                        />
+                        <div class="slide-text">
+                            <div class="slide-icon">
+                                <img src="src/img/galery/icon.png" alt="" />
+                            </div>
+                            <h3>Switzerland</h3>
+                            <div class="descr">
+                                These exercises ran in parallel with a series of
+                                focus groups comprising of parents. These
+                                exercises ran in parallel with a series.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            class="slide-img"
+                            src="src/img/galery/img-3.jpg"
+                            alt="img"
+                        />
+                        <div class="slide-text">
+                            <div class="slide-icon">
+                                <img src="src/img/galery/icon.png" alt="" />
+                            </div>
+                            <h3>Scotland</h3>
+                            <div class="descr">
+                                These exercises ran in parallel with a series of
+                                focus groups comprising of parents. These
+                                exercises ran in parallel with a series.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img
+                            class="slide-img"
+                            src="src/img/galery/img-2.png"
+                            alt="img"
+                        />
+                        <div class="slide-text">
+                            <div class="slide-icon">
+                                <img src="src/img/galery/icon.png" alt="" />
+                            </div>
+                            <h3>Switzerland</h3>
+                            <div class="descr">
+                                These exercises ran in parallel with a series of
+                                focus groups comprising of parents. These
+                                exercises ran in parallel with a series.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="places">
+                <div class="container">
+                    <h2>Featured Tour Places</h2>
+                    <div class="subtitle">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration.
+                    </div>
+
+                    <div class="places__wrapper">
+                        <div class="places__item">
+                            <div class="plases__img">
+                                <img src="src/img/places/card-1.png" alt="" />
+                            </div>
+                            <h3>Spain Places</h3>
+                            <div class="descr">
+                                <p>
+                                    <img
+                                        src="src/img/places/clock.png"
+                                        alt=""
+                                    />
+                                    7 Days/6 Nights
+                                </p>
+                                <div class="price">$544.00</div>
+                            </div>
+                        </div>
+                        <div class="places__item">
+                            <div class="plases__img">
+                                <img src="src/img/places/card-2.png" alt="" />
+                            </div>
+                            <h3>Japa Places</h3>
+                            <div class="descr">
+                                <p>
+                                    <img
+                                        src="src/img/places/clock.png"
+                                        alt=""
+                                    />
+                                    7 Days/6 Nights
+                                </p>
+                                <div class="price">$544.00</div>
+                            </div>
+                        </div>
+                        <div class="places__item">
+                            <div class="plases__img">
+                                <img src="src/img/places/card-3.png" alt="" />
+                            </div>
+                            <h3>London Places</h3>
+                            <div class="descr">
+                                <p>
+                                    <img
+                                        src="src/img/places/clock.png"
+                                        alt=""
+                                    />
+                                    7 Days/6 Nights
+                                </p>
+                                <div class="price">$544.00</div>
+                            </div>
+                        </div>
+                        <div class="places__item">
+                            <div class="plases__img">
+                                <img src="src/img/places/card-4.png" alt="" />
+                            </div>
+                            <h3>Canada Places</h3>
+                            <div class="descr">
+                                <p>
+                                    <img
+                                        src="src/img/places/clock.png"
+                                        alt=""
+                                    />
+                                    7 Days/6 Nights
+                                </p>
+                                <div class="price">$544.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <h2>Our Tour Partner</h2>
+                    <div class="subtitle">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration.
+                    </div>
+                    <div class="partners__wrapper">
+                        <div class="row row-1">
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/amadeus.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/booking.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/trivago.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/trainline.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+
+                        <div class="row row-2">
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/cheapflights.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                            <div class="partners__item">
+                                <a href="#" class="partners__logo"
+                                    ><img
+                                        src="src/img/partners/momondo.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script type="text/javascript" src="src/js/slick.min.js"></script>
+        <script
+            type="text/javascript"
+            src="src/js/jquery.validate.min.js"
+        ></script>
+        <script src="src/js/script.js"></script>
+    </body>
 </html>

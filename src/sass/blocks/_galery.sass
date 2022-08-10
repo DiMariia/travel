@@ -1,0 +1,135 @@
+.galery
+    background-color: rgba(247, 249, 252, 0.95)
+    @include adaptiv-value("padding-top", 70, 30, 0)
+    @include adaptiv-value("padding-bottom", 100, 30, 0)
+
+    .title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+            justify-content: center
+    h2
+        margin-top: 0.8rem
+        width: 50%
+        @include maxw($sm-tablet)
+            width: 70%
+            text-align: center
+        @include maxw($lg-mob)
+            width: 80%
+        @include maxw($mob)
+            width: 100%
+    .subtitle
+        text-align: start
+        width: 40%
+        @include maxw($sm-tablet)
+            width: 80%
+            text-align: center
+        @include maxw($lg-mob)
+            width: 100%
+    .slider
+        margin-left: 10%
+        width: 90%
+        position: relative
+        @include maxw($sm-tablet)
+            margin-left: 0%
+            width: 100%
+    .slide
+        margin-top: 80px
+    .slide-img
+        @include adaptiv-value("height", 310, 150, 0)
+        @include adaptiv-value("width", 540, 250, 0)
+        border-radius: 8px
+
+    .slide-icon
+        position: absolute
+        background-color: #fff
+        @include adaptiv-value("width", 90, 40, 0)
+        @include adaptiv-value("height", 90, 40, 0)
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        box-shadow: 0px 20px 50px -15px rgba(45, 51, 60, 0.2)
+        transform: translateY(-120%)
+        img
+            width: 30%
+            height: auto
+
+    h3
+        font-weight: 600
+        @include adaptiv-font(30, 16)
+        color: #292929
+    .descr
+        font-weight: 400
+        color: #5C6272
+        @include adaptiv-font(16, 10)
+
+.slick-slide
+    padding: 0 20px 0 20px
+.slick-prev, .slick-next
+    position: absolute
+    border: none
+    background: none
+    cursor: pointer
+    z-index: 2
+    top: 70%
+    left: 50%
+    @include maxw($lg)
+        left: 52%
+    @include maxw($pc)
+        left: 58%
+    @include maxw($sm-pc)
+        left: 60%
+    @include maxw($tablet)
+        left: 62%
+    @include maxw($sm-tablet)
+        display: none !important
+
+.slick-prev
+   top: 72%
+.slick-next
+    right: 35%
+    left: auto
+    @include maxw($lg)
+        right: 30%
+    @include maxw($pc)
+        right: 20%
+    @include maxw($sm-pc)
+        right: 18%
+    @include maxw($tablet)
+        right: 12%
+
+   
+.slide-text
+    display: none
+.slide-text.active
+    display: block !important
+    background-color: #fff
+    @include adaptiv-value("width", 450, 210, 0)
+    @include adaptiv-value("padding-top", 70, 30, 0)
+    @include adaptiv-value("padding-right", 45, 20, 0)
+    @include adaptiv-value("padding-bottom", 45, 20, 0)
+    @include adaptiv-value("padding-left", 45, 20, 0)
+    border-radius: 8px
+
+.slick-dots
+    list-style-type: none
+    display: flex
+    flex-wrap: nowrap
+    justify-content: center
+    padding-left: 0
+    left: calc( 50% - 50px )
+    button
+        font-size: 0px
+        position: static
+        width: 4px
+        height: 11px
+        border-radius: 50%
+        background-color: #D8D8D8
+        border: none
+        margin: 0px 6px
+        cursor: pointer
+        &:hover
+            background: #676565
