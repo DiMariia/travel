@@ -1,5 +1,5 @@
 .galery
-    background-color: rgba(247, 249, 252, 0.95)
+    background-color: $bg-color
     @include adaptiv-value("padding-top", 70, 30, 0)
     @include adaptiv-value("padding-bottom", 100, 30, 0)
 
@@ -11,7 +11,7 @@
             flex-wrap: wrap
             justify-content: center
     h2
-        margin-top: 0.8rem
+        margin-top: 12px
         width: 50%
         @include maxw($sm-tablet)
             width: 70%
@@ -26,6 +26,7 @@
         @include maxw($sm-tablet)
             width: 80%
             text-align: center
+            margin-top: 16px
         @include maxw($lg-mob)
             width: 100%
     .slider
@@ -62,46 +63,29 @@
         @include adaptiv-font(30, 16)
         color: #292929
     .descr
-        font-weight: 400
-        color: #5C6272
+        color: $subtitle-color
         @include adaptiv-font(16, 10)
 
-.slick-slide
-    padding: 0 20px 0 20px
 .slick-prev, .slick-next
     position: absolute
     border: none
     background: none
     cursor: pointer
+    width: 60px
+    height: 60px
+    background-color: #fff
+    border-radius: 50%
     z-index: 2
-    top: 70%
-    left: 50%
-    @include maxw($lg)
-        left: 52%
-    @include maxw($pc)
-        left: 58%
-    @include maxw($sm-pc)
-        left: 60%
-    @include maxw($tablet)
-        left: 62%
-    @include maxw($sm-tablet)
-        display: none !important
 
-.slick-prev
-   top: 72%
-.slick-next
-    right: 35%
-    left: auto
-    @include maxw($lg)
-        right: 30%
-    @include maxw($pc)
-        right: 20%
-    @include maxw($sm-pc)
-        right: 18%
-    @include maxw($tablet)
-        right: 12%
+.galery
+    .slick-prev, .slick-next
+        top: 70%
+        left: 80%
+    .slick-prev
+        left: calc( 80% - 90px )
+    .slick-slide
+        padding: 0 20px 0 20px
 
-   
 .slide-text
     display: none
 .slide-text.active
@@ -124,7 +108,7 @@
     button
         font-size: 0px
         position: static
-        width: 4px
+        width: 11px
         height: 11px
         border-radius: 50%
         background-color: #D8D8D8
@@ -132,4 +116,7 @@
         margin: 0px 6px
         cursor: pointer
         &:hover
-            background: #676565
+            background: #777F96
+.slick-active
+    button
+        background-color: #777F96

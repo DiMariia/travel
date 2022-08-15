@@ -9,13 +9,14 @@ h1
 
 h2
     font-weight: 700
-    color: #1E2A39
+    color: $title-color
     @include adaptiv-font(45, 25)
     @include adaptiv-value("line-height", 60, 40, 0)
+    margin: 0
 
 h3
     @include adaptiv-font(22, 16)
-    color: #1E2A39
+    color: $title-color
 h4
     @include adaptiv-font(16, 12)
     color: #4141A5
@@ -23,14 +24,15 @@ h4
 .subtitle
     font-weight: 500
     @include adaptiv-font(16, 12)
-    text-align: center
-    color: #5C6272
+    color: $subtitle-color
     opacity: 0.88
+    margin: 0
 
 a
     text-decoration: none
+    @include adaptiv-font(16, 11)
 
 p
     font-weight: 400
     @include adaptiv-font(16, 12)
-    color: #5C6272
+    color: $subtitle-color

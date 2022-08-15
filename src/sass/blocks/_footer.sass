@@ -1,0 +1,56 @@
+.footer
+    background-color: $footer-bg-color
+    @include adaptiv-value("padding-top", 230, 150, 0)
+    @include adaptiv-value("padding-bottom", 80, 30, 0)
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    .logo
+        width: 30%
+        @include maxw($sm-tablet)
+            width: 50%
+        @include maxw($mob)
+            width: 100%
+            text-align: center
+        p
+            width: 70%
+            @include maxw($mob)
+                width: 80%
+                margin: 0 auto
+                margin-top: 10px
+
+    .social__media
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        width: 40%
+        @include maxw($sm-tablet)
+            width: 50%
+        @include maxw($mob)
+            margin: 0 auto
+            width: 70%
+            margin-top: 20px
+        a
+            color: $link-color
+            width: 45%
+            margin-top: 20px
+            display: flex
+            align-items: center
+            img
+                margin-right: 10px
+    .info
+        @include maxw($mob)
+            margin: 0 auto
+            text-align: center
+            margin-top: 20px
+        h3
+            font-weight: 600
+            @include adaptiv-font(20, 14)
+            color: #fff
+        p
+            width: 70%
+            @include maxw($mob)
+                width: 100%

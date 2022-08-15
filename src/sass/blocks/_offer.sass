@@ -1,14 +1,15 @@
 .offer
-    background-color: rgba(247, 249, 252, 0.95)
-    @include adaptiv-value("padding-bottom", 100, 50, 0)
-    @include adaptiv-value("padding-top", 140, 80, 0)
+    background-color: $bg-color
+    @include adaptiv-value("padding-top", 140, 50, 0)
+    @include adaptiv-value("padding-bottom", 100, 30, 0)
     h2
         text-align: center
         margin: 0
     .subtitle
         width: 45%
+        text-align: center
         margin: 0 auto
-        margin-top: 1rem
+        margin-top: 16px
         @include maxw($pc)
             width: 50%
         @include maxw($sm-pc)
