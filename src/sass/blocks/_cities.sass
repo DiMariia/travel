@@ -6,10 +6,8 @@
         margin: 0 auto
         width: 100%
         position: relative
-        margin-right: 15%
         @include adaptiv-value("margin-top", 80, 50, 0)
-        @include maxw($sm-tablet)
-            margin-right: 0
+
     h2
         @include maxw($sm-tablet)
             text-align: center
@@ -25,13 +23,17 @@
         @include maxw($lg-mob)
             width: 100%
 .city__item
-    @include adaptiv-value("width", 320, 220, 0)
+    @include adaptiv-value("width", 320, 210, 0)
     @include adaptiv-value("height", 450, 340, 0)
     @include adaptiv-value("padding-top", 30, 15, 0)
     @include adaptiv-value("padding-right", 30, 15, 0)
     @include adaptiv-value("padding-bottom", 30, 15, 0)
     @include adaptiv-value("padding-left", 30, 15, 0)
     border-radius: 16px
+    @include minw($lg)
+        width: 320px
+        height: 450px
+        padding: 20px
 
     .title
         display: flex
@@ -58,6 +60,9 @@
         @include adaptiv-font(34, 28)
         margin: 0
         @include adaptiv-value("margin-top", 320, 220, 0)
+        @include minw($lg)
+            margin-top: 280px
+
     p
         color: #FFFFFF
         opacity: 0.9

@@ -1,6 +1,6 @@
 .promo
     background: url(../img/promo/bg.jpg) center center/cover no-repeat
-    background-position: 0% -10%
+    background-position: 0% 0%
     padding-top: 220px
     @include adaptiv-value("padding-bottom", 310, 220, 0)
     @include maxw($mob)
@@ -30,11 +30,14 @@
     &__form
         margin: 0 auto
         margin-top: 80px
-        @include adaptiv-value("height", 75, 40, 0)
+        @include adaptiv-value("height", 75, 34, 0)
         display: flex
         justify-content: center
-        @include maxw($mob)
+        @include maxw($lg-mob)
             flex-wrap: wrap
+            width: 80%
+        @include maxw($mob)
+            width: 100%
 
     &__searchbar
         height: 100%
@@ -44,7 +47,7 @@
         display: flex
         align-items: center
         margin-right: 1.2rem
-        @include maxw($mob)
+        @include maxw($lg-mob)
             margin-right: 0
             flex-wrap: wrap
         input
@@ -54,12 +57,14 @@
             border: none
             padding-left: 20px
             border-radius: 4px
-            @include maxw($mob)
+            margin: 0 10px
+            @include maxw($lg-mob)
                 width: 100%
                 height: 40px
+                margin: 0
                 margin-bottom: 10px
 
     &__button
-        @include maxw($mob)
+        @include maxw($lg-mob)
             margin-top: 120px
             width: 100% !important

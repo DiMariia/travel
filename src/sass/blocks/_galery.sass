@@ -30,14 +30,21 @@
         @include maxw($lg-mob)
             width: 100%
     .slider
-        margin-left: 10%
-        width: 90%
+        margin-left: $container-padding
+        width: calc( 100% - $container-padding )
         position: relative
         @include maxw($sm-tablet)
-            margin-left: 0%
+            margin: 0 auto
             width: 100%
+        @include minw($full-hd)
+            margin-left: calc( (100% - 100rem) / 2)
+            width: calc( 100rem + ( (100% - 100rem) /2) )
+
     .slide
         margin-top: 80px
+        transform: translateX(-20px)
+        @include maxw($sm-tablet)
+            transform: translateX(0px)
     .slide-img
         @include adaptiv-value("height", 310, 150, 0)
         @include adaptiv-value("width", 540, 250, 0)
@@ -96,7 +103,8 @@
     @include adaptiv-value("padding-right", 45, 20, 0)
     @include adaptiv-value("padding-bottom", 45, 20, 0)
     @include adaptiv-value("padding-left", 45, 20, 0)
-    border-radius: 8px
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px
 
 .slick-dots
     list-style-type: none
@@ -106,18 +114,25 @@
     padding-left: 0
     width: 100%
     left: calc( 50% - 50px )
+    li
+        margin: 0 6px
     button
         font-size: 0px
         position: static
-        width: 11px
+        width: 10px
         height: 11px
         border-radius: 50%
         background-color: #D8D8D8
         border: none
-        margin: 0px 6px
         cursor: pointer
         &:hover
             background: #777F96
+
 .slick-active
     button
         background-color: #777F96
+
+.slick-current
+    img
+        border-bottom-left-radius: 0px !important
+        border-bottom-right-radius: 0px !important

@@ -44,17 +44,20 @@ body
 .container
     margin: 0 auto
     padding: 0 1rem
-    @include minw($mob)
-        padding: 0 2rem
-    @include minw($sm-tablet)
-        padding: 0 3rem
-    @include minw($tablet)
-        padding: 0 4rem
-    @include minw($sm-pc)
-        padding: 0 6rem
-    @include minw($pc)
-        padding: 0 10rem
+    @include adaptiv-value("padding-left", 160, 16, 0)
+    @include adaptiv-value("padding-right", 160, 16, 0)
     @include minw($lg)
         max-width: 100rem
-body
-    overflow-x: hidden
+
+    // @include minw($mob)
+    //     padding: 0 2rem
+    // @include minw($sm-tablet)
+    //     padding: 0 3rem
+    // @include minw($tablet)
+    //     padding: 0 4rem
+    // @include minw($sm-pc)
+    //     padding: 0 6rem
+    // @include minw($pc)
+    //     padding: 0 10rem
+    // @include minw($lg)
+    //     max-width: 100rem

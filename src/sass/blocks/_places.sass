@@ -18,7 +18,6 @@
         display: flex
         justify-content: center
         flex-wrap: wrap
-        margin: 0 -20px
         @include adaptiv-value("margin-top", 50, 30, 0)
     &__item
         background-color: #ffff
@@ -35,8 +34,11 @@
             align-items: center
             p
                 color: #7C8291
+                img
+                    transform: translateY(20%)
+                    margin-right: 5px
     &__img
-        @include adaptiv-value("width", 250, 200, 0)
+        @include adaptiv-value("width", 250, 220, 0)
         @include adaptiv-value("height", 260, 210, 0)
         img
             width: 100%
@@ -44,3 +46,4 @@
     .price
         color: #EE6D52
         font-weight: 600
+        @include adaptiv-font(16, 12)
