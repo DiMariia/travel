@@ -30,10 +30,13 @@
     @include adaptiv-value("padding-bottom", 30, 15, 0)
     @include adaptiv-value("padding-left", 30, 15, 0)
     border-radius: 16px
+    background-position: 20% 15%
     @include minw($lg)
-        width: 320px
+        width: 300px
         height: 450px
         padding: 20px
+    @include maxw($lg-mob)
+        background-position: 30% 30%
 
     .title
         display: flex
@@ -72,7 +75,7 @@
     .slick-slide
         margin: 0 20px
         @include maxw($lg-mob)
-            margin: 0 100px
+            margin: 0 50px
 
 .cities
     .slick-prev, .slick-next
