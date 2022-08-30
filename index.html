@@ -31,7 +31,7 @@
                 </ul>
             </div>
 
-            <button class="header__button">Create Account</button>
+            <button data-modal="registration" class="header__button">Create Account</button>
             <div class="header__burger">
                 <span></span>
             </div>
@@ -50,7 +50,14 @@
                     <div class="promo__searchbar">
                         <input type="text" name="text" class="search" placeholder="Search destination" />
                         <input type="text" name="text" class="search" placeholder="C. Location" />
-                        <input type="text" name="text" class="search" placeholder="2 Person" />
+                        <!-- <input type="text" name="text" class="search" placeholder="2 Person" /> -->
+                        <select id="person" name="personlist" form="promo_form">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Person</option>
+                            <option value="3">3 Person</option>
+                            <option value="4">4 Person</option>
+                            <option value="4">5 or more persons</option>
+                          </select>
                     </div>
                     <button class="promo__button search__bttn">
                         Search
@@ -337,14 +344,15 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
                     </div>
                 </div>
                 <div class="review__item">
                     <div class="review__header">
                         <div class="review__img"><img src="src/img/reviews/review-2.png" alt=""></div>
-                    </div> 
+                    </div>
                     <div class="review__main">
                         <h3>John Smith</h3>
                         <p>Project Manager</p>
@@ -356,15 +364,16 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
-                    </div>              
+                    </div>
                 </div>
 
                 <div class="review__item">
                     <div class="review__header">
                         <div class="review__img"><img src="src/img/reviews/review-3.png" alt=""></div>
-                    </div>             
+                    </div>
                     <div class="review__main">
                         <h3>Rowhan Doe</h3>
                         <p>Business Analyst</p>
@@ -376,15 +385,16 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
-                    </div>       
+                    </div>
                 </div>
 
                 <div class="review__item">
                     <div class="review__header">
                         <div class="review__img"><img src="src/img/reviews/review-1.png" alt=""></div>
-                    </div>  
+                    </div>
                     <div class="review__main">
                         <h3>Adnan Roe</h3>
                         <p>Recruiter</p>
@@ -396,15 +406,16 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
-                    </div>                  
+                    </div>
                 </div>
 
                 <div class="review__item">
                     <div class="review__header">
                         <div class="review__img"><img src="src/img/reviews/review-2.png" alt=""></div>
-                    </div>  
+                    </div>
                     <div class="review__main">
                         <h3>Ben Ahmad</h3>
                         <p>Project Manager</p>
@@ -416,15 +427,16 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
-                    </div>                  
+                    </div>
                 </div>
 
                 <div class="review__item">
                     <div class="review__header">
                         <div class="review__img"><img src="src/img/reviews/review-3.png" alt=""></div>
-                    </div>        
+                    </div>
                     <div class="review__main">
                         <h3>Rowhan Doe</h3>
                         <p>Business Analyst</p>
@@ -436,9 +448,10 @@
                             <img src="src/img/reviews/star.png" alt="">
                             <img src="src/img/reviews/star.png" alt="">
                         </div>
-                        <div class="review__text">Before we define any approach, we need to define the brands' overall goal. We then
+                        <div class="review__text">Before we define any approach, we need to define the brands' overall
+                            goal. We then
                             need to dive.</div>
-                    </div>            
+                    </div>
                 </div>
             </div>
         </section>
@@ -450,11 +463,12 @@
                         <h2>Get our pro offers </h2>
                         <div class="subtitle">Create a visual identity for your company, and an overall brand</div>
                     </div>
-                   <form class="subscription__form">
-                        <input type="email" name="text" class="subscribe" placeholder="Type your email here">
-                        <button class="subscription__btn">Subscribe</button>
-                   </form>
-                   <button class="subscription__btn subscription__btn-mob">Subscribe</button>
+                    <form id="form-offer" class="subscription__form" action="#">
+                        <div class="input__wrapper">
+                            <input type="email" id="email" name="text" class="subscribe" required placeholder="Type your email here">
+                        </div>
+                        <button class="subscription__btn" type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -479,6 +493,37 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+
+        <form id="registration" class="form-registration modal" action="#">
+            <span class="modal_close"></span>
+              <h2>Sign Up</h2>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter password" name="password" required>
+          
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat password" name="password_confirm" required>
+          
+              <label>
+                <input type="checkbox" checked="checked" name="remember" class="checkbox"> Remember me
+              </label>
+          
+              <p>By creating an account you agree to our <a href="#" style="color:#34A5E4">Terms & Privacy</a>.</p>
+          
+              <div class="clearfix">
+                <button data-dismiss="registration" class="btn-cansel" type="button">Cancel</button>
+                <button type="submit" class="btn-signup">Sign Up</button>
+              </div>
+          </form>
+
+    </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

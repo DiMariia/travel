@@ -96,3 +96,69 @@ $(document).ready(function () {
         ],
     });
 });
+
+  $('[data-modal=registration]').on('click', function(event) {
+        event.stopPropagation();
+        $('.overlay, #registration').fadeIn('slow');
+    });
+    $('.modal_close').on('click', function() {
+        $('.overlay, #registration').fadeOut('slow');
+    });
+
+
+// Validate form
+
+$(document).ready(function () {
+    function valideForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                password_confirm: {
+                    required: true,
+                    minlength: 5,
+                    equalTo: '[name="password"]'
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name",
+                    minlength: jQuery.validator.format("Enter {0} character!")
+                },
+                phone: "Please enter your phone number",
+                email: {
+                required: "Please enter your email",
+                email: "Incorrectly entered email address"
+                },
+                password: {
+                    required: "Please enter your password",
+                }
+            }
+        });
+    };
+    valideForms('#form-offer');
+    valideForms('#registration');
+});
+
+$('[data-dismiss=registration]').on('click', function(event) {
+    event.stopPropagation();
+    $('.overlay, #registration').fadeOut('slow');
+});
+
+
+$(document).on('click', function(event) {
+    if (!$(event.target).closest('.modal').length && !$(event.target).is('modal')) {
+        $('.overlay, #registration').fadeOut('slow');
+    }
+});

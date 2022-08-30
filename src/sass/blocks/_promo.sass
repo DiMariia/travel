@@ -50,7 +50,7 @@
         @include maxw($lg-mob)
             margin-right: 0
             flex-wrap: wrap
-        input
+        input, select
             height: 30px
             width: 30%
             padding: 0
@@ -69,3 +69,9 @@
             margin-top: 120px
             width: 100% !important
             height: 40px !important
+select
+    cursor: pointer
+option
+    width: 20px
+    &::hover
+        background-color: #dc4da0 !important
