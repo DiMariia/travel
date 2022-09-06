@@ -1,0 +1,51 @@
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Regular.ttf) format('ttf'), url(../fonts/Poppins-Regular.woff) format('woff')
+    font-weight: 400
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Medium.ttf) format('ttf'), url(../fonts/Poppins-Medium.woff) format('woff')
+    font-style: italic
+    font-weight: 500
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-SemiBold.ttf) format('ttf'), url(../fonts/Poppins-SemiBold.woff) format('woff')
+    font-style: italic
+    font-weight: 600
+
+@font-face
+    font-family: 'Poppins'
+    src: url(../fonts/Poppins-Bold.ttf) format('ttf'), url(../fonts/Poppins-Bold.woff) format('woff')
+    font-weight: 700
+
+@import 'base/variables'
+@import 'base/mixins'
+@import 'blocks/header'
+@import 'blocks/promo'
+@import 'base/typography'
+@import 'base/buttons'
+@import 'blocks/offer'
+@import 'blocks/galery'
+@import 'blocks/places'
+@import 'blocks/partners'
+@import 'blocks/cities'
+@import 'blocks/reviews'
+@import 'blocks/subscription'
+@import 'blocks/footer'
+@import 'blocks/modal'
+
+body
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+    border: 0
+
+.container
+    margin: 0 auto
+    padding: 0 1rem
+    @include adaptiv-value("padding-left", 160, 16, 0)
+    @include adaptiv-value("padding-right", 160, 16, 0)
+    @include minw($lg)
+        max-width: 100rem

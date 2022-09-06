@@ -1,0 +1,96 @@
+.reviews
+    background-color: $bg-color
+    @include adaptiv-value("padding-top", 100, 30, 0)
+    @include adaptiv-value("padding-bottom", 50, 10, 0)
+
+    h2
+        @include maxw($sm-tablet)
+            text-align: center
+    .subtitle
+        width: 30%
+        margin-top: 16px
+        @include maxw($sm-tablet)
+            width: 80%
+            text-align: center
+            margin: 0 auto
+            margin-top: 16px
+        @include maxw($lg-mob)
+            width: 100%
+    &__wrapper
+        width: calc( 100% - $container-padding )
+        margin-left: $container-padding
+        position: relative
+        @include adaptiv-value("margin-top", 80, 50, 0)
+        @include maxw($sm-tablet)
+            margin: 0 auto
+            width: 100%
+            margin-top: 50px
+        @include minw($full-hd)
+            margin-left: calc( (100% - 100rem) / 2)
+            width: calc( 100rem + ( (100% - 100rem) /2) )
+
+    .rating
+        width: 40%
+        @include adaptiv-value("height", 15, 10, 0)
+        display: flex
+        justify-content: space-between
+        @include adaptiv-value("margin-top", 30, 15, 0)
+        img
+            height: 100%
+            width: auto
+
+.review
+    &__item
+        @include adaptiv-value("width", 280, 220, 0)
+        // @include adaptiv-value("height", 400, 300, 0)
+        h3, p
+            text-align: center
+            margin: 0
+        hr
+            border: 1px solid #EFEFEF
+            @include adaptiv-value("margin-top", 30, 15, 0)
+        h3
+            font-weight: 600
+            @include adaptiv-font(20, 14)
+            color: #292929
+            @include adaptiv-value("margin-top", 30, 15, 0)
+        p
+            font-weight: 400
+            @include adaptiv-font(14, 10)
+            color: #6D7487
+    &__header
+        width: 100%
+        @include adaptiv-value("height", 70, 40, 0)
+    &__main
+        background-color: #fff
+        @include adaptiv-value("height", 320, 200, 0)
+        @include adaptiv-value("padding", 30, 15, 0)
+        border-radius: 16px
+    &__img
+        position: relative
+        @include adaptiv-value("width", 70, 40, 0)
+        @include adaptiv-value("height", 70, 40, 0)
+        display: block
+        margin: 0 auto
+        border-radius: 50%
+        transform: translateY(50%)
+        z-index: 10000000
+        img
+            width: 100%
+            height: auto
+
+    &__text
+        @include adaptiv-value("margin-top", 16, 10, 0)
+        color: #646670
+        @include adaptiv-font(14, 11)
+
+.reviews
+    .slick-slide
+        margin: 0 20px
+        @include maxw($sm-tablet)
+            margin: 0 50px
+    .slick-prev, .slick-next
+        top: -150px
+        left: 85%
+    .slick-prev
+        left: calc( 85% - 90px )

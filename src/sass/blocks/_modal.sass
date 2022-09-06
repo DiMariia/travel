@@ -1,0 +1,85 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(0, 0, 0, .65)
+    z-index: 9
+.form-registration, .modal
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @include adaptiv-value("width", 450, 260, 0)
+    height: auto
+    min-height: 410px
+    background-color: #ffff
+    z-index: -1
+    @include adaptiv-value("padding", 40, 15, 0)
+    overflow: visible
+    border-radius: 8px
+    h2
+        @include adaptiv-font(24, 18)
+    p, a
+        line-height: 20px
+        @include adaptiv-font(13, 10)
+
+    input
+        width: 100%
+        @include adaptiv-value("height", 50, 40, 0)
+        border: 1px solid rgba(247, 249, 252, 0.95)
+        background-color: rgba(247, 249, 252, 0.95)
+        color: #A8A9B1
+        @include adaptiv-font(16, 12)
+        padding: 0px 0px 0px 8px
+        @include adaptiv-value("margin-top", 10, 5, 0)
+        @include adaptiv-value("margin-bottom", 20, 10, 0)
+        &::placeholder
+            color: #A8A9B1
+
+.checkbox
+    width: 20px !important
+    height: 20px !important
+    transform: translateY(5px)
+    margin-top: 0
+    @include maxw($lg-mob)
+        width: 15px !important
+        height: 15px !important
+
+label
+    @include adaptiv-font(13, 10)
+
+.clearfix
+    @include adaptiv-value("height", 50, 40, 0)
+
+.modal
+    &_close
+        position: absolute
+        top: -4px
+        right: -40px
+        width: 25px
+        height: 25px
+        color: #a12a2a
+        cursor: pointer
+        &:hover
+            opacity: 1
+        &::before
+            content: ''
+            position: absolute
+            left: 15px
+            height: 30px
+            width: 2px
+            background-color: #ffff
+            transform: rotate(45deg)
+        &::after
+            content: ''
+            position: absolute
+            left: 15px
+            height: 30px
+            width: 2px
+            background-color: #ffff
+            transform: rotate(-45deg)
+        @include maxw($mob)
+            display: none

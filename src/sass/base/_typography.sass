@@ -1,0 +1,40 @@
+
+h1
+    font-weight: 700
+    @include adaptiv-font(63, 32)
+    margin-top: 0
+    color: #fff
+    text-align: center
+    letter-spacing: -0.01em
+
+h2
+    font-weight: 700
+    color: $title-color
+    @include adaptiv-font(45, 25)
+    @include adaptiv-value("line-height", 60, 40, 0)
+    margin: 0
+
+h3
+    @include adaptiv-font(22, 16)
+    color: $title-color
+h4
+    @include adaptiv-font(16, 12)
+    color: #4141A5
+
+.subtitle
+    font-weight: 500
+    @include adaptiv-font(16, 12)
+    color: $subtitle-color
+    opacity: 0.88
+    margin: 0
+
+a
+    text-decoration: none
+    @include adaptiv-font(16, 11)
+
+p
+    font-weight: 400
+    @include adaptiv-font(16, 12)
+    color: $subtitle-color
+    @include minw($full-hd)
+        font-size: 16px

@@ -1,0 +1,100 @@
+.subscription
+    background-color: $bg-color
+    &__wrapper
+        margin: 0
+        background-color: #34A5E4
+        border-radius: 16px
+        @include adaptiv-value("padding-top", 60, 20, 0)
+        @include adaptiv-value("padding-right", 90, 20, 0)
+        @include adaptiv-value("padding-bottom", 60, 20, 0)
+        @include adaptiv-value("padding-left", 90, 20, 0)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        transform: translateY(50%)
+        @include maxw($sm-tablet)
+            flex-wrap: wrap
+            border-radius: 8px
+        @include maxw($mob)
+            transform: translateY(25%)
+
+        h2
+            color: #fff
+            @include adaptiv-font(40, 20)
+            @include maxw($mob)
+                text-align: center
+
+        .subtitle
+            color: #fff
+            margin-top: 16px
+            width: 70%
+            @include maxw($mob)
+                text-align: center
+                margin: 0 auto
+                margin-top: 16px
+                width: 100%
+
+    &__form
+        @include adaptiv-value("width", 490, 350, 0)
+        @include adaptiv-value("height", 40, 15, 0)
+        height: auto
+        @include adaptiv-value("padding", 22, 15, 0)
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow: 10px 16px 60px -7px rgba(0, 0, 0, 0.04)
+        border-radius: 4px
+        @include maxw($sm-tablet)
+            margin-top: 20px
+        @include maxw($mob)
+            height: 100px
+            height: auto
+            flex-wrap: wrap
+        div
+            display: block
+            width: 80%
+            @include maxw($mob)
+                width: 100%
+
+        input
+            width: 80%
+            height: 50px
+            border: none
+            color: #A8A9B1
+            @include adaptiv-font(16, 12)
+            margin-right: 10px
+            padding: 0px 0px 0px 8px
+            &::placeholder
+                color: #A8A9B1
+            @include maxw($mob)
+                margin-right: 0
+                width: calc( 100% - 8px )
+                height: 45px
+                border: 1px solid #d8d8d8
+        input + label
+            input
+                width: 100%
+
+    &__btn
+        @include adaptiv-value("width", 130, 90, 0)
+        @include adaptiv-value("height", 55, 30, 0)
+        border: none
+        background: #0F415C
+        box-shadow: 0px 12px 20px -5px rgba(23, 23, 126, 0.1)
+        border-radius: 4px
+        color: #FFFFFF
+        @include adaptiv-font(14, 10)
+        @include maxw($mob)
+            display: block
+            height: 45px
+            width: 100%
+            margin-top: 10px
+
+.error
+    @include adaptiv-font(14, 10)
+    margin-top: 10px
+    width: 100%
+    display: block
+    color: red
+    margin-bottom: 10px

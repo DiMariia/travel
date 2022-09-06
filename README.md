@@ -7,4 +7,3 @@
 <li>Gulp was used for the build</li>
 <li>Sass preprocessor was used for writing styles</li>
 </ul>
-
